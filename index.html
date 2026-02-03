@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Sáng Tạo: Tư Tưởng Hồ Chí Minh</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd54f;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .content {
+            flex: 1;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #d32f2f;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 0 0 300px;
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 0.95em;
+            align-self: flex-start;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 20px;
+        }
+        .sidebar h2 {
+            margin: 0 0 15px 0;
+            color: #d32f2f;
+            font-size: 1.3em;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .sidebar a {
+            color: #d32f2f;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Modal popup */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.6);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 8% auto;
+            padding: 25px;
+            border: 1px solid #888;
+            width: 85%;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            position: relative;
+        }
+        .close {
+            color: #aaa;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: #000;
+        }
+        .modal h2 {
+            color: #d32f2f;
+            margin-top: 0;
+        }
+        .modal img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            main {
+                flex-direction: column;
+            }
+            .sidebar {
+                position: static;
+                width: 100%;
+            }
+        }
+        @media (min-width: 3840px) {
+            body { font-size: 1.5em; }
+            .sidebar { flex: 0 0 450px; font-size: 1.1em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tư Tưởng Đạo Đức Hồ Chí Minh</h1>
+        <p>Phản ánh chính xác, sâu sắc các khái niệm triết học - Phù hợp phong cách giáo dục đại học</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#gioi-thieu">Giới Thiệu</a></li>
+            <li><a href="#khai-niem">Khái Niệm Triết Học</a></li>
+            <li><a href="#tu-tuong-dao-duc">Tư Tưởng Đạo Đức</a></li>
+            <li><a href="#am-thanh">Âm Thanh</a></li>
+            <li><a href="#bai-viet-mo-rong">Các Bài Viết Mở Rộng</a></li>
+            <li><a href="#trich-dan">Trích Dẫn Nguồn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content">
+            <section id="gioi-thieu">
+                <h2>Giới Thiệu Về Tư Tưởng Hồ Chí Minh</h2>
+                <p>Tư tưởng Hồ Chí Minh là một hệ thống quan điểm toàn diện và sâu sắc về những vấn đề cơ bản của cách mạng Việt Nam, là kết quả của sự vận dụng và phát triển sáng tạo chủ nghĩa Mác - Lênin vào điều kiện cụ thể của nước ta, kế thừa và phát triển các giá trị truyền thống tốt đẹp của dân tộc, tiếp thu tinh hoa văn hóa nhân loại.</p>
+                <p>Hệ thống tư tưởng này bao gồm những quan điểm về cách mạng dân tộc dân chủ nhân dân đến cách mạng xã hội chủ nghĩa, với trọng tâm là giải phóng dân tộc, giải phóng giai cấp và giải phóng con người.</p>
+                <img src="https://cdn.tuoitrethudo.vn/stores/news_dataimages/2024/072024/09/22/17afe4ef-8a4c-4d3d-be4c-91e1b158e0ee20240709221303.jpg?rt=20240709221634" alt="Chân dung Hồ Chí Minh làm từ hoa sen">
+            </section>
+            <section id="khai-niem">
+                <h2>Khái Niệm Triết Học Trong Tư Tưởng Hồ Chí Minh</h2>
+                <p>Trong thuật ngữ "tư tưởng Hồ Chí Minh", khái niệm "tư tưởng" có ý nghĩa ở tầm khái quát triết học. Tư tưởng ở đây là một hệ thống những quan điểm, quan niệm, luận điểm được xây dựng trên một nền tảng triết học nhất quán, đại biểu cho ý chí, nguyện vọng của một giai cấp, một dân tộc, được hình thành trên cơ sở thực tiễn và trở lại chỉ đạo hoạt động thực tiễn.</p>
+                <p>Tư tưởng Hồ Chí Minh được nhận diện như một hệ thống tri thức tổng hợp, bao gồm: tư tưởng triết học, tư tưởng kinh tế, tư tưởng chính trị, tư tưởng quân sự, tư tưởng văn hóa, đạo đức và nhân văn.</p>
+                <p>Triết học Hồ Chí Minh là triết học thực tiễn, biện chứng Hồ Chí Minh là biện chứng thực hành, xuyên thấm trong toàn bộ cuộc đời và sự nghiệp của Người.</p>
+                <img src="https://i.ytimg.com/vi/7qgMcY_PZrY/maxresdefault.jpg" alt="Chân dung Hồ Chí Minh qua các thời kỳ">
+            </section>
+            <section id="tu-tuong-dao-duc">
+                <h2>Tư Tưởng Đạo Đức Hồ Chí Minh</h2>
+                <p>Tư tưởng đạo đức Hồ Chí Minh là sự kết hợp đạo đức truyền thống của dân tộc với tinh hoa đạo đức của nhân loại, giữa phương Đông với phương Tây, truyền thống với hiện đại.</p>
+                <p>Đạo đức Hồ Chí Minh nhấn mạnh các phẩm chất: cần, kiệm, liêm, chính, chí công vô tư; chăm lo bồi dưỡng thế hệ cách mạng cho đời sau; và xây dựng con người mới xã hội chủ nghĩa.</p>
+                <p>Nguồn gốc từ quan điểm đạo đức Nho giáo, kết hợp với chủ nghĩa Marx - Lenin, và các giá trị nhân văn Việt Nam.</p>
+                <img src="https://doanhnghiepkinhtexanh.vn/zoom-share/1200x630/uploads/images/blog/Tranminhtuan/2024/05/19/hoi-hoa-dnktx6-1716091712.jpg" alt="Chân dung nghệ thuật Hồ Chí Minh">
+            </section>
+            <section id="am-thanh">
+                <h2>Âm Thanh Bài Phát Biểu Của Hồ Chí Minh</h2>
+                <p>Nghe bài đọc Tuyên ngôn Độc lập của Chủ tịch Hồ Chí Minh năm 1945.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/34GKvR8nZus?si=gP-mKQWckp77AeoK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </section>
+            <section id="trich-dan">
+                <h2>Trích Dẫn Nguồn Học Liệu</h2>
+                <ul>
+                    <li><a href="https://vi.wikipedia.org/wiki/T%C6%B0_t%C6%B0%E1%BB%9Fng_H%E1%BB%93_Ch%C3%AD_Minh" target="_blank">Wikipedia: Tư tưởng Hồ Chí Minh</a></li>
+                    <li><a href="https://loigiaihay.com/khai-niem-tu-tuong-va-tu-tuong-ho-chi-minh-c124a20315.html" target="_blank">Loigiaihay: Khái niệm tư tưởng và tư tưởng Hồ Chí Minh</a></li>
+                    <li><a href="https://kmacle.duytan.edu.vn/Home/ArticleDetail/vn/101/795/tu-tuong-triet-hoc-ho-chi-minh" target="_blank">Đại học Duy Tân: Tư tưởng triết học Hồ Chí Minh</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=xRKUB3fUTJM" target="_blank">YouTube: Toàn văn Bác Hồ đọc Tuyên ngôn độc lập</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="sidebar" id="bai-viet-mo-rong">
+            <h2>Các Bài Viết Mở Rộng</h2>
+            <ul>
+                <li><a href="#" onclick="openModal(1)">Tư tưởng lấy dân làm gốc của Bác Hồ soi sáng hôm nay</a></li>
+                <li><a href="#" onclick="openModal(2)">Tinh thần đoàn kết, thực hiện chính sách dân tộc, xây dựng hậu phương cách mạng thời kỳ Bác Hồ ở Cao Bằng</a></li>
+                <li><a href="#" onclick="openModal(3)">Cao Bằng - nơi Bác Hồ trở về Tổ quốc trực tiếp lãnh đạo quá trình đấu tranh giành chính quyền</a></li>
+                <li><a href="#" onclick="openModal(4)">Xây dựng đội ngũ cán bộ đủ phẩm chất, năng lực và uy tín theo tư tưởng Hồ Chí Minh</a></li>
+                <li><a href="#" onclick="openModal(5)">Suy ngẫm về “bất biến” trong phương châm “dĩ bất biến ứng vạn biến” từ tư tưởng ngoại giao Hồ Chí Minh</a></li>
+                <li><a href="#" onclick="openModal(6)">Bác Hồ với cuộc Tổng tuyển cử đầu tiên bầu Quốc hội</a></li>
+                <li><a href="#" onclick="openModal(7)">Tư tưởng Hồ Chí Minh về phát triển đội ngũ nhà giáo và sự vận dụng của Đảng trong giai đoạn hiện nay</a></li>
+                <li><a href="#" onclick="openModal(8)">Quan điểm, chỉ dẫn của Chủ tịch Hồ Chí Minh về công tác tuyên truyền, vận động quần chúng nhân dân</a></li>
+                <li><a href="#" onclick="openModal(9)">Đưa tư tưởng học tập suốt đời và ý chí, khát vọng vươn lên vào bối cảnh mới</a></li>
+                <li><a href="#" onclick="openModal(10)">Giải phóng con người - Triết lý nhân văn, phát triển trong tư tưởng Hồ Chí Minh</a></li>
+                <li><a href="#" onclick="openModal(11)">Thư Chủ tịch Hồ Chí Minh gửi Hội nghị cán bộ y tế tháng 2 năm 1955</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>Sản phẩm sáng tạo dành cho giáo dục đại học. Thiết kế bởi Grok 4 - xAI. &copy; 2026</p>
+    </footer>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(1)">&times;</span>
+            <h2>Tư tưởng lấy dân làm gốc của Bác Hồ soi sáng hôm nay</h2>
+            <p>Quan điểm “Dân là gốc-thước đo cao nhất của mọi quốc sách” của Đảng ta đang kết trái nhiều thành tựu đầy hứa hẹn là nhờ đã kế thừa tư tưởng của Bác Hồ-nhà cách mạng vĩ đại suốt đời đau đáu một chữ "dân". Ngày 5-4-1948, Bác viết bài báo lịch sử "6 điều không nên và 6 điều nên làm", mở đầu bài viết ...</p>
+            <img src="https://i.ytimg.com/vi/HyVuhWzFJbQ/maxresdefault.jpg" alt="Tư tưởng lấy dân làm gốc">
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(2)">&times;</span>
+            <h2>Tinh thần đoàn kết, thực hiện chính sách dân tộc, xây dựng hậu phương cách mạng thời kỳ Bác Hồ ở Cao Bằng</h2>
+            <p>Đã tròn 85 năm kể từ ngày Chủ tịch Hồ Chí Minh trở về nước, trực tiếp lãnh đạo cách mạng Việt Nam. Người đã chọn Pác Bó, Cao Bằng làm nơi nhen lên ngọn lửa đoàn kết toàn dân, phát động thời kỳ mới của sự nghiệp giải phóng dân tộc.</p>
+            <img src="https://files01.duytan.edu.vn/svruploads/xhnv-duytan/upload/images/638672671362462783-tai-11.jpg" alt="Hồ Chí Minh đoàn kết dân tộc Cao Bằng">
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(3)">&times;</span>
+            <h2>Cao Bằng - nơi Bác Hồ trở về Tổ quốc trực tiếp lãnh đạo quá trình đấu tranh giành chính quyền</h2>
+            <p>Không chỉ là địa bàn sớm có tổ chức đảng và phong trào cách mạng phát triển, Cao Bằng còn là nơi lãnh tụ Nguyễn Ái Quốc trở về nước để trực tiếp lãnh đạo cách mạng, nơi diễn ra Hội nghị Trung ương lần thứ tám - hội nghị chuyển hướng chiến lược quyết định, nơi ra đời Mặt trận Việt Minh và là nơi ...</p>
+            <img src="https://media.baocaobang.vn/upload/image/202401/thumbnail/114775_bac_ho_ve_tham_ba_con_pac_bo_ha_quang_cao_bang_thang_2_1961_anh_t_l_22195725.jpg" alt="Hồ Chí Minh trở về Cao Bằng">
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(4)">&times;</span>
+            <h2>Xây dựng đội ngũ cán bộ đủ phẩm chất, năng lực và uy tín theo tư tưởng Hồ Chí Minh đáp ứng yêu cầu phát triển đất nước trong kỷ nguyên mới</h2>
+            <p>Trong suốt tiến trình cách mạng Việt Nam, Chủ tịch Hồ Chí Minh luôn coi công tác cán bộ là khâu then chốt của quá trình xây dựng Đảng, là yếu tố quyết định thành bại của cách mạng, sự hưng thịnh hay suy vong của đất nước. Tư tưởng của Người đến nay vẫn còn nguyên giá trị, đặc biệt trong bối cảnh ...</p>
+            <img src="https://baodaklak.vn/file/0a3e9d3e6e3b6b2ddf2a/2024/05/20/9-1716189458685.jpg" alt="Hồ Chí Minh xây dựng đội ngũ cán bộ">
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(5)">&times;</span>
+            <h2>Suy ngẫm về “bất biến” trong phương châm “dĩ bất biến ứng vạn biến” từ tư tưởng ngoại giao Hồ Chí Minh</h2>
+            <p>“Bất biến” trong phương châm “dĩ bất biến ứng vạn biến” của tư tưởng ngoại giao Hồ Chí Minh thể hiện bản lĩnh kiên định và tầm nhìn chiến lược của dân tộc Việt Nam trong quan hệ quốc tế. Kiên định đường lối đối ngoại độc lập, tự chủ, đặt lợi ích quốc gia - dân tộc lên “trên hết, trước hết”, Chủ ...</p>
+            <img src="https://cdnmedia.daihoidang.vn/images/05d0957f378625fd44cac0d49cdc4ad8c28ce73fa2deb65fc9719826f82df6b9c120e39dc56f04161144f77fba8ce8cb65cccd41ee5d8e16d596484347609ad08cf7dfa2adc3a81a3f1f89877df5243502d269abd6882f77b8b174d6fdb904dd/ttxvn-chu-tich-hcm-va-phai-doan-vn-du-hoi-nghi-fontainebleau-1946.jpg" alt="Hồ Chí Minh dĩ bất biến ứng vạn biến">
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(6)">&times;</span>
+            <h2>Bác Hồ với cuộc Tổng tuyển cử đầu tiên bầu Quốc hội</h2>
+            <p>Hơn 4 tháng sau ngày Chủ tịch Hồ Chí Minh đọc "Tuyên ngôn độc lập" trên Quảng trường Ba Đình, người dân Việt Nam bước vào năm mới 1946-năm mở đầu kỷ nguyên dân chủ cộng hòa bằng một sự kiện vang động lịch sử: Cuộc Tổng tuyển cử đầu tiên bầu Quốc hội khóa I, cơ quan lập pháp cao nhất của đất nước, ...</p>
+            <img src="https://dbndnghean.vn/dbndna-media/24/1/3/chu-tich-ho-chi-minh-voi-cuoc-tong-tuyen-cu-dau-tien-bau-quoc-hoi-nuoc-viet-nam-dan-chu-cong-hoa-nam-1946--n1.jpg" alt="Hồ Chí Minh tổng tuyển cử Quốc hội">
+        </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(7)">&times;</span>
+            <h2>Tư tưởng Hồ Chí Minh về phát triển đội ngũ nhà giáo và sự vận dụng của Đảng trong giai đoạn hiện nay</h2>
+            <p>Chủ tịch Hồ Chí Minh rất quan tâm tới sự nghiệp giáo dục và đào tạo con người. Người khẳng định: “Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người”(1). Tuy nhiên, để sự nghiệp “trồng người” đạt được hiệu quả thì phải có được đội ngũ giáo viên - những người trực tiếp ...</p>
+            <img src="http://hoctapnghiquyet.bantindangbothanhphoyenbai.vn/storage/oaGzPm3FJ8AnZKESVFIbcGJirvkOPO6DYPXLpsiZ.jpg" alt="Hồ Chí Minh phát triển đội ngũ nhà giáo">
+        </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(8)">&times;</span>
+            <h2>Quan điểm, chỉ dẫn của Chủ tịch Hồ Chí Minh về công tác tuyên truyền, vận động quần chúng nhân dân</h2>
+            <p>Công tác tuyên truyền có ý nghĩa quan trọng trong truyền tải nội dung, thông điệp chủ trương, chính sách của Đảng, Nhà nước đến nhân dân, từ đó vận động nhân dân đồng lòng thực hiện, vì mục tiêu xây dựng, bảo vệ và phát triển đất nước. Sinh thời, Chủ tịch Hồ Chí Minh luôn đề cao và chỉ rõ vai trò, ...</p>
+            <img src="https://thainguyen.dcs.vn/uploads/xay-dung-dang/2025_12/image-20251205135828-1.jpeg" alt="Hồ Chí Minh công tác tuyên truyền">
+        </div>
+    </div>
+
+    <!-- Modal 9 -->
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(9)">&times;</span>
+            <h2>Đưa tư tưởng học tập suốt đời và ý chí, khát vọng vươn lên vào bối cảnh mới</h2>
+            <p>Cách đây tròn 78 năm, ngày 10/11/1947, Bác Hồ viết “Thư gửi ông giám đốc và toàn thể nam nữ giáo viên Bình dân học vụ Khu III” khen ngợi tỉnh Hải Dương có 6 làng toàn dân biết chữ. Bác đồng thời nhắc nhở: “... tôi mong rằng các lớp bình dân học vụ chẳng những dạy cho đồng bào học chữ, làm tính mà ...</p>
+            <img src="https://dbnd.1cdn.vn/2025/03/01/images-f9736776440a6eaad0657dd686557f2b59dbb77ea98c1088a594f44d287fab32fba59a1155e1ea05d12b6e4ac45e85a1-_head-bactolam.jpg" alt="Hồ Chí Minh học tập suốt đời">
+        </div>
+    </div>
+
+    <!-- Modal 10 -->
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(10)">&times;</span>
+            <h2>Giải phóng con người - Triết lý nhân văn, phát triển trong tư tưởng Hồ Chí Minh</h2>
+            <p>Tư tưởng Hồ Chí Minh về giải phóng con người là hệ thống quan điểm toàn diện và sâu sắc về giải phóng con người, thể hiện triết lý nhân văn được kết tinh từ truyền thống, văn hóa của dân tộc Việt Nam, mang giá trị thời đại sâu sắc. Trong kỷ nguyên vươn mình của dân tộc, cần tiếp tục nghiên cứu, vận ...</p>
+            <img src="https://btgdvtukhanhhoa.vn/Media/Articles/101025084651/17.9.bacho.jpg" alt="Hồ Chí Minh giải phóng con người">
+        </div>
+    </div>
+
+    <!-- Modal 11 -->
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(11)">&times;</span>
+            <h2>Thư Chủ tịch Hồ Chí Minh gửi Hội nghị cán bộ y tế tháng 2 năm 1955</h2>
+            <p>Trong thư Chủ tịch Hồ Chí Minh gửi Hội nghị của cán bộ y tế tháng 2/1955, có 3 nội dung quan trọng, đó là: Phải thật thà đoàn kết; thương yêu người bệnh và xây dựng nền y học của ta.</p>
+            <img src="http://t5g.org.vn/uploads/news/2018/thang%202/27218n1.jpg" alt="Hồ Chí Minh thư gửi hội nghị y tế 1955">
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById('modal' + id).style.display = 'block';
+        }
+        function closeModal(id) {
+            document.getElementById('modal' + id).style.display = 'none';
+        }
+        // Đóng modal khi click ra ngoài
+        window.onclick = function(event) {
+            var modals = document.getElementsByClassName('modal');
+            for (var i = 0; i < modals.length; i++) {
+                if (event.target === modals[i]) {
+                    modals[i].style.display = 'none';
+                }
+            }
+        };
+    </script>
+</body>
+</html>
